@@ -2,7 +2,7 @@
 
 1. Clone the repository to your home folder:
    ```
-   git clone https://github.com/gaurav210233/simple-hyprland.git ~/simple-hyprland
+   git clone https://github.com/ProgrammingWithDiego/25-Configuration.git ~/simple-hyprland
    ```
 2. Navigate to the installer directory:
    ```
@@ -12,6 +12,8 @@
    ```
    sudo sh install.sh
    ```
+
+# Below are the TODO
 
 #### Important Notes:
 
