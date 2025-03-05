@@ -1,3 +1,10 @@
+TODO:
+- Take the script from Gaurav
+- Create a different script to install your files
+- Run the script by gaurav
+- Run your script
+
+
 ## Quick Installation Script 🚀
 
 1. Clone the repository to your home folder:
