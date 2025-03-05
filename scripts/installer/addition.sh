@@ -18,16 +18,38 @@ source $SCRIPT_DIR/helper.sh
 # print_bold_blue "\n Thank you for downloading!"
 # echo "   - Thank you for gaurav210233's default configuration. If you like this, you can give him a star!"
 # run_command "pacman -S --noconfirm pipewire wireplumber pamixer brightnessctl" "Configuring audio and brightness (Recommended)" "yes"
-run_command "pacman -S --noconfirm nodejs && pacman -S --noconfirm npm" "Npm and nodejs for web development and neovim mason (Must)" "yes"
+print_bold_blue "\nInstalling for development"
 
-run_command "pacman -S --noconfirm neovim && pacman -S --noconfirm tmux && yay --noconfirm visual-studio-code-bin" "Install gigachad neovim, retarded visual studio code, and godly tmux (Will increase your weight by 48kg)" "yes" "no"
+run_command "pacman -S --noconfirm nodejs" "Nodejs for web development" "yes" "no"
 
-run_command "cp -r /home/$sudo_user/simple-hyprland/configs/nvim /home/$sudo_user/.config/ && cp -r /home/$sudo_user/simple-hyprland/configs/tmux /home/$sudo_user/.config/ && cp -r /home/$sudo_user/simple-hyprland/configs/code-flags.conf /home/$sudo_user/.config/ && yay -S --noconfirm postman-bin" "copy nvim, vs code, postman, and tmux config (must)" "yes"
+run_command "pacman -S --noconfirm npm" "Npm for web development and neovim" "yes" "no"
 
-run_command "pacman -S --noconfirm brave-bin && cp -r /home/$sudo_user/simple-hyprland/configs/kwalletrc /home/$sudo_user/.config/" "Brave and kwallet disabled" "yes" "no"
+run_command "pacman -S --noconfirm neovim" "Neovim for coding" "yes" "no"
+
+run_command "pacman -S --noconfirm tmux" "Tmux for terminal multiplexing" "yes" "no"
+
+run_command "yay --confirm visual-studio-code-bin" "Visual studio code for coding" "yes" "no"
+
+run_command "yay -S --noconfirm postman-bin" "Postman for API test" "yes" "no"
+
+print_bold_blue "\n Moving configuration file"
+
+run_command "cp -r /home/$sudo_user/simple-hyprland/configs/nvim /home/$sudo_user/.config/" "Copy nvim configs" "yes" "no"
+
+run_command "cp -r /home/$sudo_user/simple-hyprland/configs/tmux /home/$sudo_user/.config/" "Copy tmux configs" "yes" "no"
+
+run_command "cp -r /home/$sudo_user/simple-hyprland/configs/code-flags.conf /home/$sudo_user/.config/" "Copy code-flags.conf" "yes" "no"
+
+print_bold_blue "\n Installing additional software"
+
+run_command "pacman -S --noconfirm brave-bin" "Brave browser" "yes" "no"
+
+run_command "cp -r /home/$sudo_user/simple-hyprland/configs/kwalletrc /home/$sudo_user/.config/" "Brave browser kwallet disabled" "yes" "no"
 
 run_command "pacman -S --noconfirm foliate " "Foliate ebook reader" "yes" "no"
 
 run_command "pacman -S --noconfirm timeshift" "Timeshift for backups (sudo -E timeshift-gtk)" "yes" "no"
 
-run_command "pacman -S --noconfirm htop && pacman -S --noconfirm fastfetch" "Fast fetch and htop" "yes" "no"
+run_command "pacman -S --noconfirm htop" "Htop for system monitoring" "yes" "no"
+
+run_command "pacman -S --noconfirm fastfetch" "Fast fetch for system monitoring" "yes" "no"
