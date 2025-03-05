@@ -30,3 +30,4 @@ run_script "final.sh" "Final Setup"
 
 print_bold_blue "\n🌟 Setup Complete\n"
 log_message "Installation completed successfully"
+log_message "Please restart"
