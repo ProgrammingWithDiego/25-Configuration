@@ -42,3 +42,7 @@ run_command "pacman -S --noconfirm timeshift" "Timeshift for backups (sudo -E ti
 run_command "pacman -S --noconfirm htop" "Htop for system monitoring" "yes" "no"
 
 run_command "pacman -S --noconfirm fastfetch" "Fast fetch for system monitoring" "yes" "no"
+
+run_command "yay -S tgpt --noconfirm" "Terminal GPT" "yes" "no"
+
+run_command "yay -S ttyper --noconfirm" "Ttyper for typing practice" "yes" "no"
